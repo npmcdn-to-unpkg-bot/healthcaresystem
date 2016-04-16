@@ -1,0 +1,68 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html ng-app="medicrib">
+  <head>
+    <title>Medical Crib | Practitoners</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta charset="utf-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="">
+
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+    <link rel='stylesheet' type='text/css' href="{% static 'javascript/bower_components/angular-material/angular-material.css' %}" />
+    <link rel='stylesheet' type='text/css' href="{% static 'javascript/bower_components/angular-material-icons/angular-material-icons.css' %}" />
+
+
+
+    
+    {% include 'stylesheets.html' %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+
+    <style type="text/css">
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+                display: none !important;
+            }
+        </style>
+
+
+  </head>
+  <body>
+
+    {% include 'navbar.html' %}
+  
+
+
+    <div ng-app="MyApp" class="gridListdemoBasicUsage" ng-controller="AppCtrl as appCtrl">
+
+  <h1>{Pactitioner} List in {Location}</h1>
+  <div class='md-padding' layout="row" layout-wrap>
+        <md-card style="width: 300px;" ng-repeat="user in users">
+          <img src="http://placehold.it/150x150" class="md-card-image" alt="user avatar">
+          <md-card-content>
+            <h2>{{user}}</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </md-card-content>
+          <div class="md-actions" layout="row" layout-align="end center">
+            <md-button>Book Appointment</md-button>
+            <md-button>View Details</md-button>
+          </div>
+        </md-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+     {% include 'javascript.html' %} 
+  </body>
+</html>

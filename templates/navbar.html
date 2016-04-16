@@ -1,0 +1,40 @@
+{% load staticfiles %}
+
+{% block content %}
+
+<!-- Dropdown Structure -->
+<ul id='dropdown1' class='dropdown-content'>
+	<li><a href="#!">Patient</a></li>
+    <li><a href="#!">Doctor</a></li>
+    <li><a href="#!">Hospital</a></li>
+    <li><a href="#!">Diagnostic Laboratory</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Spa & Salon</a></li>
+    <li><a href="#!">Health & Wellness Center</a></li>
+</ul>
+
+
+<!--ng-controller="NavbarController as vm"-->
+
+<nav class="navbar navbar-default" role="navigation" >
+	<div class="nav-wrapper">
+      <a href="/" class="brand-logo">MediCrib</a>
+      <ul class="right hide-on-med-and-down">
+      	<li><a href="#about.html">About</a></li>
+      	<li><a href="#privacy.html">Privacy</a></li>
+     	  <li><a href="#terms.html">Terms</a></li>
+         {% if user.is_authenticated %}
+          <li><a href="/{{ user.username }}">{{ user.username }}</a></li>
+          <li><a href="/{{ user.username }}/settings">Settings</a></li>
+          <li><a href="javascript:void(0)" ng-click="vm.logout()">Logout</a></li>
+        {% else %}
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
+        {% endif %}
+       	<!-- Dropdown Trigger -->
+      	<li><a class="dropdown-button" href="#!" onclick="Materialize.toast('Beta Version Invite Only', 4000)" data-activates="dropdown1">Services<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+</nav>
+
+{% endblock content %}

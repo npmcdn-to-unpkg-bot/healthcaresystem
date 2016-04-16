@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html ng-app="medicrib">
+  <head>
+    <title>Medical Crib | Home Page</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta charset="utf-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="">
+
+    
+    {% include 'stylesheets.html' %}
+  </head>
+  <body>
+
+    {% include 'navbar.html' %}
+      {% block content %}
+
+      
+
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-xs-12 ng-view"></div>
+          </div>
+      </div>
+
+<div class="row">
+	<div class="col s12">
+      <h4 class="center">Find and Book</h4>
+    </div> 
+</div>
+
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+	      	<div class="input-field col s3">
+	          <input placeholder="Your Location" id="location" type="text" class="validate">
+	          <label for="first_name">Choose Location</label>
+	        </div>
+
+	      	<div class="input-field col s3">
+	          <input id="locality" type="text" class="validate">
+	          <label for="last_name">Locality</label>
+	        </div>  
+
+	        <div class="input-field col s6">
+	          <input id="specialty" 
+	          type="text" class="validate">
+	          <label for="last_name">Specialities, Doctors, Diagnostic Labs</label>
+	        </div>    
+        </div>
+    </form>
+</div>
+
+<div class="row">
+	<div class="col s12">
+    	<ul class="tabs">
+        	<li class="tab col s3">
+           		<a class="active center" href="#doctors">Doctors</a></li>
+        	<li class="tab col s3"><a href="#diaglab">Diagnostic Laboratories</a></li>
+      		<!--  <li class="tab col s2"><a href="#clinics">Clinics</a></li> -->
+        	<li class="tab col s3"><a href="#spassal">Spas & Salons</a></li>
+        	<li class="tab col s3"><a href="#healthwell">Health & Wellness Centres</a>
+        	</li>
+        </ul>
+    </div>
+
+    <!-- Doctors Tab -->
+    <div class="container" id="doctors">
+    	<div class="section">
+	      <!--   Icon Section  1 -->
+	    	<div class="row">
+			  	<div class="col s12 m3">
+			      	<a href="#">
+			        	<div class="icon-block">
+			            	<h2 class="center brown-text"><i class="material-icons">visibility</i></h2>
+			            	<h5 class="center">Ophthalmologist</h5>
+			            </div>
+			        </a>
+			    </div>
+
+		        <div class="col s12 m3">
+		        	<div class="icon-block">
+		            	<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+		            	<h5 class="center">Dentist</h5>
+		            </div>
+		        </div>
+
+		        <div class="col s12 m3">
+		        	<div class="icon-block">
+		            	<h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+		            	<h5 class="center">Dermatologist</h5>
+		            </div>
+		        </div>
+
+		        <div class="col s12 m3">
+		        	<div class="icon-block">
+		            	<h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+		            	<h5 class="center">Cardiologist</h5>
+		            </div>
+		        </div>
+      		</div>
+      		<!-- End of Icon Section 1 -->
+
+
+		    <!--   Icon Section 2  -->
+		    <div class="row">
+		        <div class="col s12 m3">
+		        	<div class="icon-block">
+		            	<h2 class="center brown-text"><i class="material-icons">visibility</i></h2>
+		            	<h5 class="center">Psychiatrist</h5>
+
+		            </div>
+		        </div>
+
+        		<div class="col s12 m3">
+          			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            			<h5 class="center">Urologist</h5>
+          			</div>
+        		</div>
+
+        		<div class="col s12 m3">
+          			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            			<h5 class="center">Neurologist</h5>
+          			</div>
+        		</div>
+
+        		<div class="col s12 m3">
+          			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            			<h5 class="center">Gynecologist</h5>
+          			</div>
+        		</div>
+      		</div>
+      		<!-- End of Icon Section 2 -->
+
+    	</div>
+    </div>
+    <!-- Close Doctors Tab -->
+
+
+    <!-- Diagonostic Lab Tab -->
+    <div class="container" id="diaglab">
+    	<div class="section">
+	      <!--   Icon Section 1 -->
+	    	<div class="row">
+        
+	      		<div class="col s12 m3">
+	          		<div class="icon-block">
+	            		<h2 class="center brown-text"><i class="material-icons">visibility</i></h2>
+	            		<h5 class="center">All Labs</h5>
+	          		</div>
+	        	</div>
+
+        		<div class="col s12 m3">
+          			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            			<h5 class="center">Pregnancy Test</h5>
+          			</div>
+        		</div>
+        
+      			<div class="col s12 m3">
+          			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">visibility</i></h2>
+            			<h5 class="center">CT Scan</h5>
+          			</div>
+        		</div>
+
+        		<div class="col s12 m3">
+          			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            			<h5 class="center">MRI Scan</h5>
+          			</div>
+        		</div>
+      	
+    		</div>
+    		<!-- End Icon Section 1 -->
+
+    		<!--   Icon Section  2 -->
+      		<div class="row">
+      			<div class="col s12 m3">
+          			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">visibility</i></h2>
+            			<h5 class="center">Stool Routine</h5>
+          			</div>
+        		</div>
+
+        		<div class="col s12 m3">
+          			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            			<h5 class="center">HIV Test</h5>
+
+          			</div>
+        		</div>
+        
+      			<div class="col s12 m3">
+         			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">visibility</i></h2>
+            			<h5 class="center">X-Ray</h5>
+
+          			</div>
+        		</div>
+
+        		<div class="col s12 m3">
+          			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            			<h5 class="center">Blood Test</h5>
+          			</div>
+        		</div>
+    		</div>
+    		<!-- End Icon Section 2 -->
+  		</div>
+  	</div>
+  	<!-- Close Diagnostics Lab Tab -->
+
+  	<!-- Spas and Salon -->
+  	<div class="container" id="spassal">
+    	<div class="section">
+
+	      <!--   Icon Section   -->
+	    	<div class="row">
+        
+      			<div class="col s12 m6">
+          			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">visibility</i></h2>
+            			<h5 class="center">Spas</h5>
+          			</div>
+        		</div>
+
+        		<div class="col s12 m6">
+         			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            			<h5 class="center">Salon</h5>
+          			</div>
+        		</div>
+
+      		</div>
+      		<!-- End of Icon Section -->
+
+    	</div>
+  	</div>
+  	<!-- End Spas and Salon Tab -->
+
+  	<!-- Health and Wellness Center -->
+  	<div class="container" id="healthwell">
+    	<div class="section">
+
+      		<!--   Icon Section   -->
+    		<div class="row">
+        
+      			<div class="col s12 m4">
+            		<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">visibility</i></h2>
+            			<h5 class="center">Gyms</h5>
+          			</div>
+        		</div>
+
+        		<div class="col s12 m4">
+          			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            			<h5 class="center">Yoga Centres</h5>
+          			</div>
+        		</div>
+
+        		<div class="col s12 m4">
+          			<div class="icon-block">
+            			<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            			<h5 class="center">Sport Centres</h5>
+          			</div>
+        		</div>
+      		</div>
+      		<!-- End of Icon Section -->
+    	</div>
+    </div>
+    <!-- End Health and Wellness Tab -->
+
+</div>
+
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+            	<h5 class="white-text">About Us</h5>
+                <p class="grey-text text-lighten-4">xxxxxxx</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+            	<h5 class="white-text">Services</h5>
+                	<ul>
+                  		<li><a class="grey-text text-lighten-3" href="#!">Book Emergency Appointments</a></li>
+                  		<li><a class="grey-text text-lighten-3" href="#!">Search and Visit Hospitals</a></li>
+                  		<li><a class="grey-text text-lighten-3" href="#!">Request Home Visit</a></li>
+                  		<li><a class="grey-text text-lighten-3" href="#!">Register as a Doctor</a></li>
+                	</ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+    	<div class="container">&copy; 2016. All Rights Reserved.
+            <a class="grey-text text-lighten-4 right" href="#!">Invite a Doctor</a>
+        </div>
+
+    </div>
+</footer>
+
+
+
+    {% endblock %}
+
+    {% include 'javascript.html' %} 
+  </body>
+</html>
